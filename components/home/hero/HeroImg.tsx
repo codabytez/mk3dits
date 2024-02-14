@@ -21,7 +21,7 @@ const HeroImg: NextPage = () => {
       justifyContent={"center"}
       alignItems={"center"}
       zIndex={1}
-      mt={{ base: 20, md: "130px" }}
+      mt={{ base: 20, md: "130px", lg: "200px" }}
     >
       <ClickMeText />
 

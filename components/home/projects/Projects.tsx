@@ -9,7 +9,7 @@ import { ChakraSvg } from "@/helpers/customChakra";
 
 const Projects: NextPage = () => {
   return (
-    <VStack w={"full"}>
+    <VStack w={"full"} id={"projects"}>
       <VStack w={"full"} spacing={{ base: 4, lg: 20 }}>
         <HStack
           w={{ md: "664px" }}

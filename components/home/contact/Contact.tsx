@@ -11,10 +11,19 @@ import Image from "next/image";
 import gmail from "@/public/assets/gmail.svg";
 import linkedin from "@/public/assets/linkedin.svg";
 import Link from "next/link";
+import smileFace from "@/public/assets/smileFace.svg";
+import handIcon from "@/public/assets/hand.svg";
 
 const Contact: NextPage = () => {
   return (
-    <VStack w={"full"} h={"644px"} mx={"auto"} mt={"93px"} px={5}>
+    <VStack
+      w={"full"}
+      h={{ lg: "644px" }}
+      mx={"auto"}
+      mt={"93px"}
+      px={5}
+      id={"contact"}
+    >
       <VStack
         w={"90%"}
         mx={"auto"}
@@ -23,7 +32,47 @@ const Contact: NextPage = () => {
         bg={"white"}
         shadow={{ base: "contactMobile", md: "contact" }}
         py={{ base: "60px", md: "70px" }}
+        position={"relative"}
       >
+        <>
+          <Box
+            as={Image}
+            src={smileFace}
+            alt={"smile face"}
+            transform={"rotate(-19.654deg)"}
+            position={"absolute"}
+            zIndex={10}
+            top={-12}
+            left={{ base: "130px", md: "170px" }}
+            w={{ base: "48px", md: "99px" }}
+            h={{ base: "44px", md: "91px" }}
+          />
+
+          <Box
+            as={Image}
+            src={handIcon}
+            alt={"hand icon"}
+            position={"absolute"}
+            zIndex={10}
+            top={{ base: "-4px", md: "-10px" }}
+            left={{ base: "100px", md: "130px" }}
+            w={{ base: "21px", md: "43px" }}
+            h={{ base: "12px", md: "25.5px" }}
+          />
+
+          <Box
+            as={Image}
+            src={handIcon}
+            alt={"hand icon"}
+            position={"absolute"}
+            zIndex={10}
+            top={{ base: "-4px", md: "-10px" }}
+            left={{ base: "170px", md: "239px" }}
+            w={{ base: "21px", md: "43px" }}
+            h={{ base: "12px", md: "25.5px" }}
+          />
+        </>
+
         <Heading
           as={"h3"}
           fontSize={{ base: 18, md: 40, xl: 48 }}

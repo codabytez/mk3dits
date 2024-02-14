@@ -10,7 +10,12 @@ import Contact from "./contact/Contact";
 
 const HomePage: NextPage = () => {
   return (
-    <VStack alignItems={"flex-start"}>
+    <VStack
+      alignItems={"flex-start"}
+      maxW={"1440px"}
+      w={"full"}
+      overflowX={"hidden"}
+    >
       <HeroPage />
 
       <Strap />

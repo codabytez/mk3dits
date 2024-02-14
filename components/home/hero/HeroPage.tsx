@@ -7,17 +7,17 @@ import CurveText from "./CurveText";
 const HeroPage: NextPage = () => {
   return (
     <Stack
-      direction={{ base: "column", lg: "row" }}
-      justifyContent={{ base: "center", lg: "flex-start" }}
-      alignItems={{ base: "center", lg: "flex-start" }}
+      direction={{ base: "column", xl: "row" }}
+      justifyContent={{ base: "center", xl: "flex-start" }}
+      alignItems={{ base: "center", xl: "flex-start" }}
       maxW={"1312px"}
       gap={20}
       mx={"auto"}
-      mt={{ lg: "200px" }}
-      mb={"120px"}
+      mt={{ base: "110px", xl: "200px" }}
+      mb={{ base: "120px", xl: "150px" }}
       position={"relative"}
-      border={"1px solid pink"}
       px={5}
+      id={'about'}
     >
       <HeroText />
 
@@ -25,10 +25,10 @@ const HeroPage: NextPage = () => {
 
       <Box
         position={"absolute"}
-        bottom={{ base: "-150px", md: "-100px" }}
+        bottom={{ base: "-150px", md: "-100px", xl: "-130px" }}
         right={{ base: "30%", md: 0 }}
-        w={{ base: "122px", lg: "200px" }}
-        h={{ base: "122px", lg: "200px" }}
+        w={{ base: "122px", xl: "200px" }}
+        h={{ base: "122px", xl: "200px" }}
       >
         <CurveText />
 
@@ -39,8 +39,8 @@ const HeroPage: NextPage = () => {
           left={"50%"}
           transform={"translate(-50%, -50%)"}
           xmlns="http://www.w3.org/2000/svg"
-          width={{ base: "42px", lg: "68px" }}
-          height={{ base: "42px", lg: "68px" }}
+          width={{ base: "42px", xl: "68px" }}
+          height={{ base: "42px", xl: "68px" }}
           viewBox="0 0 68 68"
           fill="none"
         >

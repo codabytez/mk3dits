@@ -67,7 +67,8 @@ const Services: NextPage = () => {
           templateColumns={{
             base: "repeat(1, 1fr)",
             lg: "repeat(2, 1fr)",
-            xl: "repeat(3, 1fr)",
+            xl: "repeat(2, 1fr)",
+            "2xl": "repeat(3, 1fr)",
           }}
           style={{ direction: "rtl" }}
           mx={{ base: "auto" }}

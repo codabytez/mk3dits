@@ -12,7 +12,8 @@ const Button = {
       fontSize: "24px",
     },
     sm: {
-      padding: "16px",
+      padding: "24px 20px",
+      fontSize: "24px",
     },
     md: {
       padding: "30px 55px",

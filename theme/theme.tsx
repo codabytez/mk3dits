@@ -3,6 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 import Button from "./components/button";
 import colors from "./foundations/colors";
 import shadows from "./foundations/shadows";
+import breakpoints from "./foundations/breakpoints";
 
 export const theme = extendTheme({
   fonts: {
@@ -12,6 +13,7 @@ export const theme = extendTheme({
   },
   colors,
   shadows,
+  breakpoints,
   components: {
     Button,
   },

@@ -26,13 +26,13 @@ export default function RootLayout({
         style={{
           maxWidth: "1440px",
           margin: "auto",
-          // border: "1px solid pink",
+          overflowX: "hidden",
         }}
       >
         <Providers>
-          {/* <Navbar /> */}
+          <Navbar />
           <main>{children}</main>
-          {/* <Footer /> */}
+          <Footer />
         </Providers>
       </body>
     </html>

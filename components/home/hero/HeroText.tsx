@@ -8,44 +8,44 @@ const HeroText: NextPage = () => {
     <VStack
       maxW={"716px"}
       spacing={{ base: 8 }}
-      alignItems={{ base: "flex-start", md: "center" }}
-      justifyContent={{ base: "flex-start", md: "center" }}
+      alignItems={{ base: "flex-start", md: "center", xl: "flex-start" }}
+      justifyContent={{ base: "flex-start", md: "center", xl: "flex-start" }}
     >
       <VStack
-        alignItems={{ base: "flex-start", md: "center" }}
-        justifyContent={{ base: "flex-start", md: "center" }}
+        alignItems={{ base: "flex-start", md: "center", xl: "flex-start" }}
+        justifyContent={{ base: "flex-start", md: "center", xl: "flex-start" }}
         gap={8}
       >
         <HeroSmileIcon />
         <VStack alignItems={"flex-start"} maxW={"716px"} spacing={2}>
           <Heading
             as="h1"
-            fontSize={{ base: 42, md: 56, lg: 64 }}
+            fontSize={{ base: 42, md: 56, "2xl": 61 }}
             alignSelf={"stretch"}
-            textAlign={{ base: "left", md: "center" }}
+            textAlign={{ base: "left", md: "center", xl: "left" }}
           >
             Hello, I'm Edo Michael 👨🏾‍💻 A{" "}
             <Text as="span" position={"relative"}>
-              product
+              product{" "}
               <Box
                 as={"span"}
                 position={"absolute"}
-                w={"100%"}
+                w={`calc(100% + 10px)`}
                 h={{ base: "20px", lg: "33px" }}
                 left={0}
                 top={{ base: "30px", lg: "44px" }}
                 zIndex={-1}
                 bg={"primary.100"}
               />
-            </Text>{" "}
+            </Text>
             <Text as="span" position={"relative"}>
               designer
               <Box
                 as={"span"}
                 position={"absolute"}
-                w={`calc(100% + 12px)`}
+                w={"100%"}
                 h={{ base: "20px", lg: "33px" }}
-                left={{ base: -3, sm: -4 }}
+                left={{ base: 0 }}
                 top={{ base: "30px", lg: "44px" }}
                 zIndex={-1}
                 bg={"primary.100"}
@@ -58,14 +58,17 @@ const HeroText: NextPage = () => {
       </VStack>
 
       <Stack
-        flexDir={{ base: "column", md: "row" }}
-        spacing={10}
+        flexDir={{ base: "column", sm: "row" }}
+        spacing={{ base: 10, sm: 3, md: 10 }}
         alignItems={"flex-start"}
       >
-        <Button variant={"secondary"} w={{ base: "330px", md: "auto" }}>
+        <Button
+          variant={"secondary"}
+          w={{ base: "300px", sm: "80%", md: "auto" }}
+        >
           View resume
         </Button>
-        <Button w={{ base: "330px", md: "auto" }}>Hire me</Button>
+        <Button w={{ base: "300px", sm: "80%", md: "auto" }}>Hire me</Button>
       </Stack>
     </VStack>
   );
