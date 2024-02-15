@@ -26,15 +26,6 @@
         "eventHandlerPropPrefix": "on" // Customize event handler prop prefix if needed
       }
     ],
-    "react/jsx-sort-props": [
-      "error",
-      {
-        "ignoreCase": true,
-        "callbacksLast": true,
-        "shorthandLast": true,
-        "reservedFirst": true
-      }
-    ],
     // Add custom rules for SVG attribute naming conventions
     "camelcase": [
       "error",

@@ -135,7 +135,8 @@ const HeroImg: NextPage = () => {
             right={{
               base: showImg ? "10px" : "16px",
               md: showImg ? "18px" : "30px",
-              lg: showImg ? "8px" : "18px",
+              // lg:
+              xl: showImg ? "10px" : "20px",
             }}
             transition={"all 1.5s ease-in-out"}
             transform={showImg ? "scaleX(-1)" : "scaleX(1)"}

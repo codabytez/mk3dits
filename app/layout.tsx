@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import type { Metadata } from "next";
 import { Space_Grotesk as spaceGroteskFont } from "next/font/google";
 import Footer from "@/components/Footer";
+import { Box } from "@chakra-ui/react";
 
 const spaceGrotesk = spaceGroteskFont({
   subsets: ["latin"],
@@ -23,19 +24,19 @@ export default function RootLayout({
 }) {
   return (
     <html className={spaceGrotesk.variable} lang="en">
-      <body
-        style={{
-          maxWidth: "1440px",
-          margin: "auto",
-          overflowX: "hidden",
-        }}
+      <Box
+        as={"body"}
+        maxW={"1440px"}
+        mx={"auto"}
+        overflowX={"hidden"}
+        scrollBehavior={'smooth'}
       >
         <Providers>
           <Navbar />
-          <main>{children}</main>
+          <Box as={"main"}>{children}</Box>
           <Footer />
         </Providers>
-      </body>
+      </Box>
     </html>
   );
 }

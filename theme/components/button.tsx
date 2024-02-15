@@ -49,6 +49,9 @@ const Button = {
       color: "white",
       boxShadow: "button",
       height: "40px",
+      _hover: {
+        bg: "orange.200",
+      },
     },
   },
   // The default size and variant values

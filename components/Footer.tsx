@@ -1,12 +1,5 @@
-"use client";
 import React from "react";
-import {
-  Box,
-  HStack,
-  Link as ChakraLink,
-  Text,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, HStack, Link as ChakraLink, Text, Stack } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -71,6 +64,7 @@ const Footer: NextPage = () => {
               fill="none"
               height={{ base: "30px", lg: "49px" }}
               stroke="black"
+              _hover={{ stroke: "orange.200" }}
               viewBox="0 0 48 49"
               width={{ base: "30px", lg: "48px" }}
               xmlns="http://www.w3.org/2000/svg"
@@ -124,6 +118,7 @@ const Footer: NextPage = () => {
               as={"svg"}
               className="footer-icon"
               fill="black"
+              _hover={{ fill: "orange.200" }}
               height={{ base: "30px", lg: "49px" }}
               viewBox="0 0 48 49"
               width={{ base: "30px", lg: "48px" }}
@@ -160,6 +155,7 @@ const Footer: NextPage = () => {
               as={"svg"}
               className="footer-icon"
               fill="black"
+              _hover={{ fill: "orange.200" }}
               height={{ base: "30px", lg: "49px" }}
               viewBox="0 0 48 49"
               width={{ base: "30px", lg: "48px" }}
@@ -178,6 +174,7 @@ const Footer: NextPage = () => {
               as={"svg"}
               className="footer-icon"
               fill="black"
+              _hover={{ fill: "orange.200" }}
               height={{ base: "30px", lg: "49px" }}
               viewBox="0 0 48 49"
               width={{ base: "30px", lg: "48px" }}
@@ -191,14 +188,6 @@ const Footer: NextPage = () => {
           </ChakraLink>
         </HStack>
       </Stack>
-      <style jsx>{`
-        .footer-icon:hover {
-          fill: #de611a !important;
-        }
-        .dribble-icon:hover {
-          stroke: #de611a !important;
-        }
-      `}</style>
     </Box>
   );
 };
