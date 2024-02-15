@@ -10,7 +10,7 @@ import {
 import { NextPage } from "next";
 import Image from "next/image";
 import gmail from "@/public/assets/gmail.svg";
-import linkedin from "@/public/assets/linkedin.svg";
+import linkedin from "@/public/assets/linkedIn.svg";
 import Link from "next/link";
 import smileFace from "@/public/assets/smileFace.svg";
 import handIcon from "@/public/assets/hand.svg";
