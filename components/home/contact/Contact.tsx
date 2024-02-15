@@ -43,7 +43,7 @@ const Contact: NextPage = () => {
             left={{ base: "130px", md: "170px" }}
             position={"absolute"}
             src={smileFace}
-            top={{ base: -12, lg: -24 }}
+            top={{ base: -12, md: -24 }}
             transform={"rotate(-19.654deg)"}
             w={{ base: "48px", md: "99px" }}
             zIndex={10}

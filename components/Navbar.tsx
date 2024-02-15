@@ -97,7 +97,7 @@ const Navbar: NextPage = () => {
             flex={"1"}
             flexBasis={"418px"}
             flexDir={{ base: "column", lg: "row" }}
-            h={{ base: "300px", lg: "auto" }}
+            h={{ base: "400px", lg: "auto" }}
             justifyContent={{ base: "center", lg: "flex-start" }}
             maxW={{ base: "690px", lg: "auto" }}
             position={{ base: "absolute", lg: "relative" }}

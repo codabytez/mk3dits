@@ -15,12 +15,12 @@ const ClickMeText: NextPage = () => {
       <Box
         as={"svg"}
         fill="none"
-        height={{ base: "19px", md: "35" }}
+        height={{ base: "19px", md: "35px" }}
         left={0}
         position={"absolute"}
         top={{ base: "33px" }}
         viewBox="0 0 37 35"
-        width={{ base: "20.5px", md: "37" }}
+        width={{ base: "20.5px", md: "37px" }}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

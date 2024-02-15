@@ -110,7 +110,6 @@ const HeroImg: NextPage = () => {
           top={0}
           width={{ base: "73.5px", md: "101px" }}
           zIndex={2}
-          // bg={"white"}
           cursor={"pointer"}
           onClick={() => setShowImg(!showImg)}
         >
@@ -135,7 +134,6 @@ const HeroImg: NextPage = () => {
             right={{
               base: showImg ? "10px" : "16px",
               md: showImg ? "18px" : "30px",
-              // lg:
               xl: showImg ? "10px" : "20px",
             }}
             transition={"all 1.5s ease-in-out"}
@@ -145,7 +143,6 @@ const HeroImg: NextPage = () => {
               alt="Hand Icon"
               as={Image}
               height={{ base: "12px", md: "19px" }}
-              // position={"absolute"}
               src={handIcon}
               width={{ base: "21px", md: "32.5px" }}
               zIndex={2}
@@ -177,7 +174,6 @@ const HeroImg: NextPage = () => {
             as={Image}
             height={{ base: "273.5px", md: "424px" }}
             src={mk3dits}
-            // transform={"translateY(-100px)"}
             width={{ base: "273.5px", md: "424px" }}
             position={"absolute"}
             top={0}

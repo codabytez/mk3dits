@@ -26,10 +26,11 @@ export default function RootLayout({
     <html className={spaceGrotesk.variable} lang="en">
       <Box
         as={"body"}
+        minW={"360px"}
         maxW={"1440px"}
         mx={"auto"}
         overflowX={"hidden"}
-        scrollBehavior={'smooth'}
+        scrollBehavior={"smooth"}
       >
         <Providers>
           <Navbar />

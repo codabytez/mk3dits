@@ -26,23 +26,23 @@ const HeroPage: NextPage = () => {
 
       <Box
         bottom={{ base: "-150px", md: "-100px", xl: "-130px" }}
-        h={{ base: "122px", xl: "200px" }}
+        h={{ base: "122px", lg: "200px" }}
         position={"absolute"}
-        right={{ base: "30%", md: 0 }}
-        w={{ base: "122px", xl: "200px" }}
+        right={{ base: "30%", md: "-15%", xl: 0 }}
+        w={{ base: "122px", lg: "200px" }}
       >
         <CurveText />
 
         <Box
           as={"svg"}
           fill="none"
-          height={{ base: "42px", xl: "68px" }}
+          height={{ base: "42px", lg: "68px" }}
           left={"50%"}
           position={"absolute"}
           top={"50%"}
           transform={"translate(-50%, -50%)"}
           viewBox="0 0 68 68"
-          width={{ base: "42px", xl: "68px" }}
+          width={{ base: "42px", lg: "68px" }}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path

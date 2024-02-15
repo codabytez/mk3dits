@@ -34,7 +34,7 @@ const HeroText: NextPage = () => {
                 h={{ base: "20px", lg: "33px" }}
                 left={0}
                 position={"absolute"}
-                top={{ base: "30px", lg: "44px" }}
+                top={{ base: "30px", md: "40px", lg: "44px" }}
                 w={`calc(100% + 10px)`}
                 zIndex={-1}
               />
@@ -47,7 +47,7 @@ const HeroText: NextPage = () => {
                 h={{ base: "20px", lg: "33px" }}
                 left={{ base: 0 }}
                 position={"absolute"}
-                top={{ base: "30px", lg: "44px" }}
+                top={{ base: "30px", md: "40px", lg: "44px" }}
                 w={"100%"}
                 zIndex={-1}
               />
