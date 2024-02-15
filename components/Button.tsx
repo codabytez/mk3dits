@@ -1,28 +1,29 @@
+import React from "react";
 import { NextPage } from "next";
 import { Box, Button as Btn, ButtonProps } from "@chakra-ui/react";
 
 const Button: NextPage<ButtonProps> = (props) => {
   return (
-    <Box position="relative" role="group" display={"flex"}>
+    <Box display={"flex"} position="relative" role="group">
       <Btn {...props}>{props.children}</Btn>
 
       <Box
-        as={"svg"}
-        xmlns="http://www.w3.org/2000/svg"
-        width="76"
-        height="83"
-        viewBox="0 0 76 83"
-        fill="none"
-        position={"absolute"}
-        right={"-44px"}
-        bottom={"-45px"}
-        display={"none"}
-        transition={"all 0.3s ease-in-out"}
         _groupHover={{
           display: "flex",
         }}
+        as={"svg"}
+        bottom={"-45px"}
+        display={"none"}
+        fill="none"
+        height="83"
+        position={"absolute"}
+        right={"-44px"}
+        transition={"all 0.3s ease-in-out"}
+        viewBox="0 0 76 83"
+        width="76"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_300_3336)">
+        <g clipPath="url(#clip0_300_3336)">
           <path
             d="M59.9395 13.7752C59.3599 12.8883 54.1821 12.1413 48.2488 11.9651C39.0209 11.7203 37.4627 12.0754 36.9168 13.9497C35.3552 18.6471 37.5243 19.7032 48.3104 19.593C60.0067 19.2974 62.9527 17.9394 59.9395 13.7752Z"
             fill="black"
@@ -39,10 +40,10 @@ const Button: NextPage<ButtonProps> = (props) => {
         <defs>
           <clipPath id="clip0_300_3336">
             <rect
-              width="38"
-              height="80"
               fill="white"
+              height="80"
               transform="translate(44) rotate(32.8917)"
+              width="38"
             />
           </clipPath>
         </defs>

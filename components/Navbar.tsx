@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { HStack, Box, Stack, Link as ChakraLink } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Link from "next/link";
@@ -14,75 +15,75 @@ const Navbar: NextPage = () => {
   return (
     <HStack
       as="nav"
+      bg={"white"}
       justifyContent={"center"}
+      maxW={"1440px"}
+      mx={"auto"}
       position={"fixed"}
       top={0}
-      maxW={"1440px"}
       w={"full"}
-      mx={"auto"}
-      bg={"white"}
       zIndex={200}
     >
       <Box
         as={Image}
-        src={navBarLeftFLower}
-        pos={"absolute"}
-        top={"50px"}
-        left={"0px"}
-        zIndex={-1}
-        overflow={"hidden"}
         display={{ base: "none", lg: "block" }}
+        left={"0px"}
+        overflow={"hidden"}
+        pos={"absolute"}
+        src={navBarLeftFLower}
+        top={"50px"}
+        zIndex={-1}
       />
 
       <Box
         as={Image}
-        src={navbarRightFlower}
-        pos={"absolute"}
-        top={"0px"}
-        right={"0px"}
-        zIndex={-1}
-        overflow={"hidden"}
         display={{ base: "none", lg: "block" }}
+        overflow={"hidden"}
+        pos={"absolute"}
+        right={"0px"}
+        src={navbarRightFlower}
+        top={"0px"}
+        zIndex={-1}
       />
 
       <HStack
         as="nav"
         borderBottom={{ lg: "6px solid black" }}
-        py={{ base: 2, lg: 8 }}
         justifyContent={"center"}
-        position={"relative"}
-        w={"full"}
         maxW={"1440px"}
+        position={"relative"}
+        py={{ base: 2, lg: 8 }}
+        w={"full"}
       >
         <HStack
-          justifyContent={{ base: "space-between", lg: "center" }}
-          border={"5px solid black"}
           bg={"white"}
+          border={"5px solid black"}
+          justifyContent={{ base: "space-between", lg: "center" }}
+          position={"relative"}
           shadow={"navbar"}
           w={{ base: "full", md: "764px" }}
-          position={"relative"}
         >
           <HStack
+            bg={"white"}
             flexBasis={{ sm: "345px" }}
             p={"24.5px"}
-            bg={"white"}
             position={"relative"}
             zIndex={1}
           >
-            <Image src={mkLogo} alt="MK Logo" />
+            <Image alt="MK Logo" src={mkLogo} />
           </HStack>
 
           <Box
             as={"svg"}
+            cursor={"pointer"}
             display={{ base: "flex", lg: "none" }}
+            fill="none"
+            height="38"
             position={"absolute"}
             right={3}
-            cursor={"pointer"}
-            xmlns="http://www.w3.org/2000/svg"
-            width="38"
-            height="38"
             viewBox="0 0 38 38"
-            fill="none"
+            width="38"
+            xmlns="http://www.w3.org/2000/svg"
             onClick={() => setIsOpen(!isOpen)}
           >
             <path
@@ -92,199 +93,199 @@ const Navbar: NextPage = () => {
           </Box>
 
           <Stack
-            flexDir={{ base: "column", lg: "row" }}
-            justifyContent={{ base: "center", lg: "flex-start" }}
-            flexBasis={"418px"}
+            bg={"white"}
             flex={"1"}
+            flexBasis={"418px"}
+            flexDir={{ base: "column", lg: "row" }}
+            h={{ base: "300px", lg: "auto" }}
+            justifyContent={{ base: "center", lg: "flex-start" }}
+            maxW={{ base: "690px", lg: "auto" }}
             position={{ base: "absolute", lg: "relative" }}
+            spacing={{ base: 0 }}
+            top={{ base: "90px", lg: "auto" }}
             transform={{
               base: isOpen ? "translateY(0)" : "translateY(-140%)",
               lg: "translateY(0)",
             }}
             transition={"transform 1s ease-in-out"}
             w={{ base: "full", lg: "auto" }}
-            maxW={{ base: "690px", lg: "auto" }}
-            h={{ base: "300px", lg: "auto" }}
-            top={{ base: "90px", lg: "auto" }}
-            bg={"white"}
-            spacing={{ base: 0 }}
             zIndex={{ base: -1, lg: 1 }}
           >
             <ChakraLink
-              as={Link}
-              href={"/"}
-              border={{ base: "5px solid black", lg: 0 }}
-              borderBottom={0}
-              borderX={{ lg: "5px solid black" }}
-              flex={"1"}
-              alignItems={"center"}
-              textAlign={"center"}
-              p={{ base: 0, md: 7 }}
-              display={{ base: "none", lg: "flex" }}
-              fontWeight={"medium"}
-              fontSize={{ base: 24, sm: 56, lg: 24 }}
-              role={"group"}
-              position={"relative"}
               _hover={{
                 textDecoration: "none",
               }}
+              alignItems={"center"}
+              as={Link}
+              border={{ base: "5px solid black", lg: 0 }}
+              borderBottom={0}
+              borderX={{ lg: "5px solid black" }}
+              display={{ base: "none", lg: "flex" }}
+              flex={"1"}
+              fontSize={{ base: 24, sm: 56, lg: 24 }}
+              fontWeight={"medium"}
+              href={"/"}
+              p={{ base: 0, md: 7 }}
+              position={"relative"}
+              role={"group"}
+              textAlign={"center"}
               onClick={() => setIsOpen(false)}
             >
               Home
               <Box
+                _groupHover={{ display: "block" }}
                 as={"span"}
-                position={"absolute"}
-                w={{ base: "30%", lg: "60%" }}
-                h={{ base: "40px", lg: "20px" }}
-                zIndex={-1}
                 bg={"#FFDC58"}
                 display={"none"}
-                _groupHover={{ display: "block" }}
+                h={{ base: "40px", lg: "20px" }}
+                position={"absolute"}
+                w={{ base: "30%", lg: "60%" }}
+                zIndex={-1}
               />
             </ChakraLink>
             <ChakraLink
+              _hover={{
+                textDecoration: "none",
+              }}
+              alignItems={"center"}
               as={Link}
-              href={"#about"}
               border={{ base: "5px solid black", lg: 0 }}
               borderBottom={0}
               borderRight={{ lg: "5px solid black" }}
               display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
               flex={"1"}
-              textAlign={"center"}
-              p={{ base: 0, md: 7 }}
               fontSize={{ base: 24, sm: 56, lg: 24 }}
               fontWeight={"medium"}
-              role={"group"}
+              href={"#about"}
+              justifyContent={"center"}
+              p={{ base: 0, md: 7 }}
               position={"relative"}
-              _hover={{
-                textDecoration: "none",
-              }}
+              role={"group"}
+              textAlign={"center"}
               onClick={() => setIsOpen(false)}
             >
               About
               <Box
+                _groupHover={{ display: "block" }}
                 as={"span"}
-                position={"absolute"}
-                w={{ base: "30%", lg: "60%" }}
-                h={{ base: "40px", lg: "20px" }}
-                zIndex={-1}
                 bg={"#FFDC58"}
                 display={"none"}
-                _groupHover={{ display: "block" }}
+                h={{ base: "40px", lg: "20px" }}
+                position={"absolute"}
+                w={{ base: "30%", lg: "60%" }}
+                zIndex={-1}
               />
             </ChakraLink>
             <ChakraLink
-              as={Link}
-              href={"#projects"}
-              border={{ base: "5px solid black", lg: 0 }}
-              borderBottom={0}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              flex={"1"}
-              textAlign={"center"}
-              p={{ base: 0, md: 7 }}
-              fontSize={{ base: 24, sm: 56, lg: 24 }}
-              fontWeight={"medium"}
-              role={"group"}
-              position={"relative"}
               _hover={{
                 textDecoration: "none",
               }}
+              alignItems={"center"}
+              as={Link}
+              border={{ base: "5px solid black", lg: 0 }}
+              borderBottom={0}
+              display={"flex"}
+              flex={"1"}
+              fontSize={{ base: 24, sm: 56, lg: 24 }}
+              fontWeight={"medium"}
+              href={"#projects"}
+              justifyContent={"center"}
+              p={{ base: 0, md: 7 }}
+              position={"relative"}
+              role={"group"}
+              textAlign={"center"}
               onClick={() => setIsOpen(false)}
             >
               Projects
               <Box
+                _groupHover={{ display: "block" }}
                 as={"span"}
-                position={"absolute"}
-                w={{ base: "30%", lg: "60%" }}
-                h={{ base: "40px", lg: "20px" }}
-                zIndex={-1}
                 bg={"#FFDC58"}
                 display={"none"}
-                _groupHover={{ display: "block" }}
+                h={{ base: "40px", lg: "20px" }}
+                position={"absolute"}
+                w={{ base: "30%", lg: "60%" }}
+                zIndex={-1}
               />
             </ChakraLink>
             <ChakraLink
-              as={Link}
-              href={"#contact"}
-              border={{ base: "5px solid black", lg: 0 }}
-              justifyContent={"center"}
-              alignItems={"center"}
-              flex={"1"}
-              textAlign={"center"}
-              p={{ base: 0, md: 7 }}
-              fontSize={{ base: 24, sm: 56, lg: 24 }}
-              fontWeight={"medium"}
-              display={{ base: "flex", lg: "none" }}
-              role={"group"}
-              position={"relative"}
               _hover={{
                 textDecoration: "none",
               }}
+              alignItems={"center"}
+              as={Link}
+              border={{ base: "5px solid black", lg: 0 }}
+              display={{ base: "flex", lg: "none" }}
+              flex={"1"}
+              fontSize={{ base: 24, sm: 56, lg: 24 }}
+              fontWeight={"medium"}
+              href={"#contact"}
+              justifyContent={"center"}
+              p={{ base: 0, md: 7 }}
+              position={"relative"}
+              role={"group"}
+              textAlign={"center"}
               onClick={() => setIsOpen(false)}
             >
               Contact
               <Box
+                _groupHover={{ display: "block" }}
                 as={"span"}
-                position={"absolute"}
-                w={"30%"}
-                h={{ base: "40px", lg: "33px" }}
-                zIndex={-1}
                 bg={"#FFDC58"}
                 display={"none"}
-                _groupHover={{ display: "block" }}
+                h={{ base: "40px", lg: "33px" }}
+                position={"absolute"}
+                w={"30%"}
+                zIndex={-1}
               />
             </ChakraLink>
           </Stack>
           <HStack>
             <HStack>
               <Box
-                w={"14px"}
-                h={"14px"}
-                position={"absolute"}
-                left={"-12px"}
-                top={"-14px"}
-                shadow={"navbar"}
-                border={"3px solid black"}
                 bg={"white"}
+                border={"3px solid black"}
+                h={"14px"}
+                left={"-12px"}
+                position={"absolute"}
+                shadow={"navbar"}
+                top={"-14px"}
+                w={"14px"}
               />
 
               <Box
-                w={"14px"}
-                h={"14px"}
-                position={"absolute"}
-                left={"-8px"}
-                bottom={"-12px"}
-                shadow={"navbar"}
-                border={"3px solid black"}
                 bg={"white"}
+                border={"3px solid black"}
+                bottom={"-12px"}
+                h={"14px"}
+                left={"-8px"}
+                position={"absolute"}
+                shadow={"navbar"}
+                w={"14px"}
                 zIndex={1}
               />
             </HStack>
             <HStack>
               <Box
-                w={"14px"}
+                bg={"white"}
+                border={"3px solid black"}
                 h={"14px"}
                 position={"absolute"}
                 right={"-8px"}
-                top={"-7px"}
                 shadow={"navbar"}
-                border={"3px solid black"}
-                bg={"white"}
+                top={"-7px"}
+                w={"14px"}
               />
 
               <Box
-                w={"14px"}
+                bg={"white"}
+                border={"3px solid black"}
+                bottom={"-12px"}
                 h={"14px"}
                 position={"absolute"}
                 right={"-8px"}
-                bottom={"-12px"}
                 shadow={"navbar"}
-                border={"3px solid black"}
-                bg={"white"}
+                w={"14px"}
               />
             </HStack>
           </HStack>

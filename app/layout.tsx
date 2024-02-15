@@ -1,11 +1,12 @@
 // app/layout.tsx
+import React from "react";
 import Navbar from "@/components/Navbar";
 import { Providers } from "./providers";
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Grotesk as spaceGroteskFont } from "next/font/google";
 import Footer from "@/components/Footer";
 
-const spaceGrotesk = Space_Grotesk({
+const spaceGrotesk = spaceGroteskFont({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
 });
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={spaceGrotesk.variable}>
+    <html className={spaceGrotesk.variable} lang="en">
       <body
         style={{
           maxWidth: "1440px",

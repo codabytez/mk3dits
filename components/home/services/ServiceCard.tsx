@@ -1,3 +1,4 @@
+import React from "react";
 import { Heading, Text, VStack, Link as ChakraLink } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Link from "next/link";
@@ -18,13 +19,13 @@ const ServiceCard: NextPage = () => {
         spacing={{ base: 3, md: 5 }}
       >
         <VStack
-          justifyContent={"center"}
-          w={{ base: "52px", md: "70px" }}
-          h={{ base: "52px", md: "70px" }}
-          p={"8px 11px 7.2px 11px"}
-          borderRadius={"50px"}
-          border={"3px solid #000"}
           bg={"#C5A1FF"}
+          border={"3px solid #000"}
+          borderRadius={"50px"}
+          h={{ base: "52px", md: "70px" }}
+          justifyContent={"center"}
+          p={"8px 11px 7.2px 11px"}
+          w={{ base: "52px", md: "70px" }}
         ></VStack>
         <Heading as={"h4"} fontSize={{ base: 26, md: 36 }} fontWeight={"bold"}>
           UX Strategy
@@ -39,18 +40,18 @@ const ServiceCard: NextPage = () => {
       </VStack>
 
       <ChakraLink
-        as={Link}
-        href={"#"}
-        fontSize={{ base: 26, md: 36 }}
-        fontWeight={"medium"}
-        p={{ base: "20px 19px", md: "31px 26px" }}
-        borderTop={"3px solid #000"}
-        w={"full"}
-        transition={"all 0.5s"}
         _hover={{
           bg: "orange.200",
           color: "white",
         }}
+        as={Link}
+        borderTop={"3px solid #000"}
+        fontSize={{ base: 26, md: 36 }}
+        fontWeight={"medium"}
+        href={"#"}
+        p={{ base: "20px 19px", md: "31px 26px" }}
+        transition={"all 0.5s"}
+        w={"full"}
       >
         Learn more{" "}
       </ChakraLink>

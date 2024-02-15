@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { NextPage } from "next";
 import { Box } from "@chakra-ui/react";
 import { ChakraBox } from "@/helpers/customChakra";
@@ -17,10 +18,10 @@ const CurveText: NextPage = () => {
     >
       <Box
         as={"svg"}
-        width={{ base: "122px", lg: "196px" }}
+        fill="none"
         height={{ base: "122px", lg: "196px" }}
         viewBox="0 0 196 196"
-        fill="none"
+        width={{ base: "122px", lg: "196px" }}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

@@ -1,4 +1,5 @@
-import { Box, Button, HStack, Heading, Text, VStack } from "@chakra-ui/react";
+import React from "react";
+import { Button, HStack, Heading, Text, VStack } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Image from "next/image";
 import ProjectCardBox from "./ProjectCardBox";
@@ -8,41 +9,41 @@ const stacks = ["UI Design", "User Research", "Webflow Develop"];
 const ProjectCard: NextPage = () => {
   return (
     <VStack
-      w={{ base: "316px", md: "535px" }}
-      h={{ base: "316px", md: "536px" }}
-      shadow={{ base: "projectMobile", md: "project" }}
-      position={"relative"}
-      justifyContent={"center"}
       alignItems={"center"}
+      h={{ base: "316px", md: "536px" }}
+      justifyContent={"center"}
+      position={"relative"}
+      shadow={{ base: "projectMobile", md: "project" }}
+      w={{ base: "316px", md: "535px" }}
       zIndex={1}
     >
       <VStack
-        w={"full"}
-        h={"full"}
-        bg={"white"}
-        position={"relative"}
-        justifyContent={"center"}
         alignItems={"center"}
-        zIndex={1}
-        spacing={"35px"}
+        bg={"white"}
+        h={"full"}
+        justifyContent={"center"}
         p={"45px 35px"}
+        position={"relative"}
+        spacing={"35px"}
+        w={"full"}
+        zIndex={1}
       >
         <Image
-          src={"https://picsum.photos/464/294?grayscale"}
-          width={464}
-          height={294}
           alt={"project"}
+          height={294}
+          src={"https://picsum.photos/464/294?grayscale"}
           style={{
             border: "4.416px solid #000",
             background:
               "linear-gradient(0deg, rgba(228, 192, 192, 0.06) 0%, rgba(228, 192, 192, 0.06) 100%), lightgray 50% / cover no-repeat",
           }}
+          width={464}
         />
 
         <HStack
-          w={"full"}
-          justifyContent={"space-between"}
           alignItems={"flex-end"}
+          justifyContent={"space-between"}
+          w={"full"}
         >
           <VStack alignItems={"flex-start"} spacing={3}>
             <Heading
@@ -73,18 +74,18 @@ const ProjectCard: NextPage = () => {
             variant={"tertiary"}
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
+              fill="none"
               height="16"
               viewBox="0 0 16 16"
-              fill="none"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M11.5997 3.84119L11.9967 10.499M11.5997 3.84119L4.94189 4.23822M11.5997 3.84119L4.29546 12.0718"
                 stroke="#FDFDFD"
-                strokeWidth="1.41492"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                strokeWidth="1.41492"
               />
             </svg>
           </Button>

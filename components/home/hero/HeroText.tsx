@@ -1,54 +1,55 @@
+import React from "react";
 import { NextPage } from "next";
-import { VStack, HStack, Heading, Text, Box, Stack } from "@chakra-ui/react";
+import { VStack, Heading, Text, Box, Stack } from "@chakra-ui/react";
 import Button from "@/components/Button";
 import HeroSmileIcon from "./HeroSmileIcon";
 
 const HeroText: NextPage = () => {
   return (
     <VStack
-      maxW={"716px"}
-      spacing={{ base: 8 }}
       alignItems={{ base: "flex-start", md: "center", xl: "flex-start" }}
       justifyContent={{ base: "flex-start", md: "center", xl: "flex-start" }}
+      maxW={"716px"}
+      spacing={{ base: 8 }}
     >
       <VStack
         alignItems={{ base: "flex-start", md: "center", xl: "flex-start" }}
-        justifyContent={{ base: "flex-start", md: "center", xl: "flex-start" }}
         gap={8}
+        justifyContent={{ base: "flex-start", md: "center", xl: "flex-start" }}
       >
         <HeroSmileIcon />
         <VStack alignItems={"flex-start"} maxW={"716px"} spacing={2}>
           <Heading
+            alignSelf={"stretch"}
             as="h1"
             fontSize={{ base: 42, md: 56, "2xl": 61 }}
-            alignSelf={"stretch"}
             textAlign={{ base: "left", md: "center", xl: "left" }}
           >
-            Hello, I'm Edo Michael 👨🏾‍💻 A{" "}
+            Hello, I&apos;m Edo Michael 👨🏾‍💻 A{" "}
             <Text as="span" position={"relative"}>
               product{" "}
               <Box
                 as={"span"}
-                position={"absolute"}
-                w={`calc(100% + 10px)`}
+                bg={"primary.100"}
                 h={{ base: "20px", lg: "33px" }}
                 left={0}
+                position={"absolute"}
                 top={{ base: "30px", lg: "44px" }}
+                w={`calc(100% + 10px)`}
                 zIndex={-1}
-                bg={"primary.100"}
               />
             </Text>
             <Text as="span" position={"relative"}>
               designer
               <Box
                 as={"span"}
-                position={"absolute"}
-                w={"100%"}
+                bg={"primary.100"}
                 h={{ base: "20px", lg: "33px" }}
                 left={{ base: 0 }}
+                position={"absolute"}
                 top={{ base: "30px", lg: "44px" }}
+                w={"100%"}
                 zIndex={-1}
-                bg={"primary.100"}
               />
             </Text>{" "}
             transforming problems into user-friendly and attainable solutions
@@ -58,9 +59,9 @@ const HeroText: NextPage = () => {
       </VStack>
 
       <Stack
+        alignItems={"flex-start"}
         flexDir={{ base: "column", sm: "row" }}
         spacing={{ base: 10, sm: 3, md: 10 }}
-        alignItems={"flex-start"}
       >
         <Button
           variant={"secondary"}

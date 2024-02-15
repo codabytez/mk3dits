@@ -1,3 +1,4 @@
+import React from "react";
 import { HStack, Heading, VStack, Box, Grid } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Image from "next/image";
@@ -9,40 +10,40 @@ import ServiceCard from "./ServiceCard";
 const Services: NextPage = () => {
   return (
     <VStack
-      position={"relative"}
-      justifyContent={"center"}
       alignItems={"center"}
-      mt={16}
+      justifyContent={"center"}
       mb={{ base: 5, lg: 20 }}
+      mt={16}
+      position={"relative"}
       w={"full"}
     >
       <Box
-        as={Image}
-        src={leftFlower}
         alt={"left flower"}
-        position={"absolute"}
-        top={"330px"}
-        left={"0px"}
+        as={Image}
         display={{ base: "none", md: "block" }}
+        left={"0px"}
+        position={"absolute"}
+        src={leftFlower}
+        top={"330px"}
       />
 
       <Box
-        as={Image}
-        src={rightFlower}
         alt={"left flower"}
-        position={"absolute"}
+        as={Image}
         bottom={"30px"}
-        right={"0px"}
         display={{ base: "none", md: "block" }}
+        position={"absolute"}
+        right={"0px"}
+        src={rightFlower}
       />
 
       <VStack
         alignItems={"flex-start"}
-        position={"relative"}
-        spacing={{ base: 6, md: 20 }}
         maxW={"1327px"}
         mx={"auto"}
+        position={"relative"}
         px={{ base: 5 }}
+        spacing={{ base: 6, md: 20 }}
       >
         <HStack spacing={9} w={{ md: "700px" }}>
           <Heading
@@ -54,24 +55,24 @@ const Services: NextPage = () => {
           </Heading>
 
           <Box
-            as={Image}
-            src={smileFace}
             alt={"smile face"}
+            as={Image}
+            h={{ base: "29px", md: "59px" }}
+            src={smileFace}
             transform={"rotate(8.958deg)"}
             w={{ base: "32px", md: "64px" }}
-            h={{ base: "29px", md: "59px" }}
           />
         </HStack>
 
         <Grid
+          mx={{ base: "auto" }}
+          style={{ direction: "rtl" }}
           templateColumns={{
             base: "repeat(1, 1fr)",
             lg: "repeat(2, 1fr)",
             xl: "repeat(2, 1fr)",
             "2xl": "repeat(3, 1fr)",
           }}
-          style={{ direction: "rtl" }}
-          mx={{ base: "auto" }}
         >
           {Array.from({ length: 5 }).map((_, index) => (
             <ServiceCard key={index} />

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   HStack,
   Heading,
@@ -17,59 +18,59 @@ import handIcon from "@/public/assets/hand.svg";
 const Contact: NextPage = () => {
   return (
     <VStack
-      w={"full"}
       h={{ lg: "644px" }}
-      mx={"auto"}
-      mt={"93px"}
-      px={5}
       id={"contact"}
+      mt={"93px"}
+      mx={"auto"}
+      px={5}
+      w={"full"}
     >
       <VStack
-        w={"90%"}
-        mx={"auto"}
-        borderRadius={"2px"}
-        border={{ base: "2px solid #000", md: "6px solid #000" }}
         bg={"white"}
-        shadow={{ base: "contactMobile", md: "contact" }}
-        py={{ base: "60px", md: "70px" }}
+        border={{ base: "2px solid #000", md: "6px solid #000" }}
+        borderRadius={"2px"}
+        mx={"auto"}
         position={"relative"}
+        py={{ base: "60px", md: "70px" }}
+        shadow={{ base: "contactMobile", md: "contact" }}
+        w={"90%"}
       >
         <>
           <Box
-            as={Image}
-            src={smileFace}
             alt={"smile face"}
-            transform={"rotate(-19.654deg)"}
-            position={"absolute"}
-            zIndex={10}
-            top={-12}
-            left={{ base: "130px", md: "170px" }}
-            w={{ base: "48px", md: "99px" }}
+            as={Image}
             h={{ base: "44px", md: "91px" }}
+            left={{ base: "130px", md: "170px" }}
+            position={"absolute"}
+            src={smileFace}
+            top={{ base: -12, lg: -24 }}
+            transform={"rotate(-19.654deg)"}
+            w={{ base: "48px", md: "99px" }}
+            zIndex={10}
           />
 
           <Box
-            as={Image}
-            src={handIcon}
             alt={"hand icon"}
-            position={"absolute"}
-            zIndex={10}
-            top={{ base: "-4px", md: "-10px" }}
+            as={Image}
+            h={{ base: "12px", md: "25.5px" }}
             left={{ base: "100px", md: "130px" }}
+            position={"absolute"}
+            src={handIcon}
+            top={{ base: "-4px", md: "-10px" }}
             w={{ base: "21px", md: "43px" }}
-            h={{ base: "12px", md: "25.5px" }}
+            zIndex={10}
           />
 
           <Box
-            as={Image}
-            src={handIcon}
             alt={"hand icon"}
-            position={"absolute"}
-            zIndex={10}
-            top={{ base: "-4px", md: "-10px" }}
-            left={{ base: "170px", md: "239px" }}
-            w={{ base: "21px", md: "43px" }}
+            as={Image}
             h={{ base: "12px", md: "25.5px" }}
+            left={{ base: "170px", md: "239px" }}
+            position={"absolute"}
+            src={handIcon}
+            top={{ base: "-4px", md: "-10px" }}
+            w={{ base: "21px", md: "43px" }}
+            zIndex={10}
           />
         </>
 
@@ -85,30 +86,30 @@ const Contact: NextPage = () => {
         <Text
           fontSize={{ base: 14, md: 24, xl: 32 }}
           maxW={{ base: "243px", sm: "420px", md: "600px", xl: "866px" }}
-          textAlign={"center"}
           mb={{ base: "36px", md: "63px" }}
+          textAlign={"center"}
         >
           Do you want to collaborate, share opportunities, or have me work on
           your project. send me a message via my email
         </Text>
 
-        <HStack spacing={{ base: 4, md: 10 }} mb={{ base: 5, md: 8 }}>
+        <HStack mb={{ base: 5, md: 8 }} spacing={{ base: 4, md: 10 }}>
           <Box
-            w={{ base: "24px", md: "40px", xl: "48px" }}
             h={{ base: "24px", md: "40px", xl: "48px" }}
+            w={{ base: "24px", md: "40px", xl: "48px" }}
           >
-            <Image src={gmail} alt={"gmail"} />
+            <Image alt={"gmail"} src={gmail} />
           </Box>
           <ChakraLink
-            as={Link}
-            href={"mailto:mk3dits@gmail.com"}
-            color={"#636363"}
-            fontSize={{ base: 16, md: 30, xl: 40 }}
-            textDecor={"underline"}
-            transition={"all 0.5s"}
             _hover={{
               color: "orange.200",
             }}
+            as={Link}
+            color={"#636363"}
+            fontSize={{ base: 16, md: 30, xl: 40 }}
+            href={"mailto:mk3dits@gmail.com"}
+            textDecor={"underline"}
+            transition={"all 0.5s"}
           >
             mk3dits@gmail.com
           </ChakraLink>
@@ -116,21 +117,21 @@ const Contact: NextPage = () => {
 
         <HStack spacing={{ base: 4, md: 10 }}>
           <Box
-            w={{ base: "24px", md: "40px", xl: "48px" }}
             h={{ base: "24px", md: "40px", xl: "48px" }}
+            w={{ base: "24px", md: "40px", xl: "48px" }}
           >
-            <Image src={linkedin} alt={"linkedin"} />
+            <Image alt={"linkedin"} src={linkedin} />
           </Box>
           <ChakraLink
-            as={Link}
-            href={"https://www.linkedin.com/in/michael-edo-b38414220/"}
-            color={"#636363"}
-            fontSize={{ base: 16, md: 30, xl: 40 }}
-            textDecor={"underline"}
-            transition={"all 0.5s"}
             _hover={{
               color: "orange.200",
             }}
+            as={Link}
+            color={"#636363"}
+            fontSize={{ base: 16, md: 30, xl: 40 }}
+            href={"https://www.linkedin.com/in/michael-edo-b38414220/"}
+            textDecor={"underline"}
+            transition={"all 0.5s"}
           >
             Michael Edo
           </ChakraLink>

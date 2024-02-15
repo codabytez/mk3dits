@@ -1,26 +1,27 @@
+import React from "react";
 import { NextPage } from "next";
 import { Box, Text } from "@chakra-ui/react";
 
 const ClickMeText: NextPage = () => {
   return (
     <Box
-      w={"310px"}
       h={"184px"}
+      left={{ base: "200px", md: "290px" }}
       position={"absolute"}
       top={{ base: "-80px", md: "-170px" }}
-      left={{ base: "200px", md: "290px" }}
-      zIndex={2}
+      w={"310px"}
+      zIndex={-2}
     >
       <Box
         as={"svg"}
-        position={"absolute"}
-        left={0}
-        top={{ base: "33px" }}
-        xmlns="http://www.w3.org/2000/svg"
-        width={{ base: "20.5px", md: "37" }}
-        height={{ base: "19px", md: "35" }}
-        viewBox="0 0 37 35"
         fill="none"
+        height={{ base: "19px", md: "35" }}
+        left={0}
+        position={"absolute"}
+        top={{ base: "33px" }}
+        viewBox="0 0 37 35"
+        width={{ base: "20.5px", md: "37" }}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M19.5486 4.40249C18.672 5.80177 19.9278 9.81158 21.7009 11.2891C23.061 12.3941 24.0673 11.8873 24.3322 9.94737C24.6366 7.90265 23.1384 5.00003 21.433 4.27048C20.1335 3.70027 19.9771 3.72903 19.5486 4.40249Z"
@@ -38,27 +39,27 @@ const ClickMeText: NextPage = () => {
       <Text
         fontSize={{ base: 19, md: 29 }}
         fontWeight={"bold"}
-        textShadow={"heroText"}
-        transform={"rotate(-16.5deg)"}
-        position={"absolute"}
         left={{ base: "20px", md: "43px" }}
+        position={"absolute"}
+        textShadow={"heroText"}
         top={3}
+        transform={"rotate(-16.5deg)"}
       >
         CLICK ME
       </Text>
 
       <Box
         as={"svg"}
-        position={"absolute"}
-        left={{ base: "35px" }}
-        top={{ base: "20px" }}
-        xmlns="http://www.w3.org/2000/svg"
-        width={{ base: "84px", md: "185px" }}
-        height={{ base: "84px", md: "184px" }}
-        viewBox="0 0 185 184"
         fill="none"
+        height={{ base: "84px", md: "184px" }}
+        left={{ base: "35px" }}
+        position={"absolute"}
+        top={{ base: "20px" }}
+        viewBox="0 0 185 184"
+        width={{ base: "84px", md: "185px" }}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_245_3916)">
+        <g clipPath="url(#clip0_245_3916)">
           <g filter="url(#filter0_d_245_3916)">
             <path
               d="M51.9145 75.0782L52.2376 76.0057C66.9196 73.8447 87.8182 77.0025 104.94 85.7572L105.168 85.3121L104.94 85.7573C115.094 90.9484 123.878 98.0699 129.308 107.133C134.729 116.183 136.825 127.202 133.557 140.252L133.557 140.253C133.472 140.594 133.125 140.804 132.781 140.719C132.44 140.633 132.23 140.284 132.316 139.94C135.496 127.24 133.425 116.475 128.078 107.629C122.739 98.7956 114.155 91.9078 104.356 86.8976C94.4671 81.8419 83.3066 78.6638 72.855 77.3308C62.4109 75.9988 52.6318 76.504 45.5173 78.8548L45.517 78.8549C45.1735 78.9687 44.9822 78.8909 44.8704 78.8155C44.7332 78.7229 44.656 78.5885 44.6365 78.5492L44.6362 78.5486C44.6025 78.4813 44.5539 78.3622 44.5553 78.2272C44.5565 78.1131 44.5923 77.9478 44.8005 77.7558L44.8004 77.7559C44.8004 77.7559 44.8078 77.7495 44.8267 77.7352C44.8465 77.7203 44.8733 77.701 44.9079 77.6772C44.9772 77.6295 45.0694 77.5691 45.1836 77.4968C45.4116 77.3524 45.7158 77.1675 46.0762 76.9529C46.7966 76.5241 47.7303 75.9835 48.705 75.4235C49.3609 75.0468 50.0361 74.6609 50.6761 74.295C51.9324 73.5769 53.0535 72.9362 53.628 72.5936C54.3007 72.1929 55.2607 71.6927 56.4086 71.0967L56.5168 71.0405C57.6334 70.4608 58.9102 69.7979 60.2339 69.0655C62.9608 67.5565 65.9198 65.7347 68.1252 63.6987C69.3725 62.5485 70.4342 61.2946 70.944 59.9496C71.4666 58.5706 71.3983 57.1187 70.4318 55.6618C69.4566 54.1907 67.9645 53.3675 66.1893 52.9927C64.4239 52.62 62.3516 52.6833 60.1495 52.9983L60.1494 52.9983C54.5063 53.8063 47.8041 56.4306 42.0331 59.3214C36.2699 62.2082 31.3553 65.4013 29.3096 67.3901L29.3093 67.3904C29.0551 67.638 28.6504 67.6315 28.4048 67.3792L28.4047 67.3791C28.1578 67.1255 28.163 66.7209 28.4178 66.4725C30.4332 64.5122 35.4353 61.2353 41.4136 58.2327C47.3843 55.234 54.2489 52.5496 59.9674 51.731C65.3066 50.9667 69.4777 51.9045 71.4989 54.9525C72.6227 56.6472 72.7987 58.2954 72.3188 59.8889C71.8312 61.5077 70.6534 63.1096 68.9932 64.6406L68.9931 64.6407C66.819 66.6469 63.8705 68.4811 61.0881 70.0332C59.7234 70.7944 58.4065 71.4836 57.2477 72.09L57.1881 72.1212C56.0212 72.7319 55.0068 73.2634 54.2857 73.6934C53.8226 73.9681 52.9416 74.4843 51.9145 75.0782Z"
@@ -74,20 +75,20 @@ const ClickMeText: NextPage = () => {
         </g>
         <defs>
           <filter
+            colorInterpolationFilters="sRGB"
+            filterUnits="userSpaceOnUse"
+            height="95.9929"
             id="filter0_d_245_3916"
+            width="121.043"
             x="26.7227"
             y="50.9785"
-            width="121.043"
-            height="95.9929"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
+              result="hardAlpha"
               type="matrix"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
             />
             <feOffset dx="-1" dy="4" />
             <feComposite in2="hardAlpha" operator="out" />
@@ -96,23 +97,23 @@ const ClickMeText: NextPage = () => {
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"
             />
             <feBlend
-              mode="normal"
               in2="BackgroundImageFix"
+              mode="normal"
               result="effect1_dropShadow_245_3916"
             />
             <feBlend
-              mode="normal"
               in="SourceGraphic"
               in2="effect1_dropShadow_245_3916"
+              mode="normal"
               result="shape"
             />
           </filter>
           <clipPath id="clip0_245_3916">
             <rect
-              width="130"
-              height="130"
               fill="white"
+              height="130"
               transform="translate(88.916) rotate(42.6258)"
+              width="130"
             />
           </clipPath>
         </defs>

@@ -1,3 +1,4 @@
+import React from "react";
 import { Box } from "@chakra-ui/react";
 import { NextPage } from "next";
 
@@ -5,18 +6,18 @@ const HeroSmileIcon: NextPage = () => {
   return (
     <Box
       as={"svg"}
-      xmlns="http://www.w3.org/2000/svg"
-      width={{ base: "80px", lg: "204px" }}
+      fill="none"
       height={{ base: "83px", lg: "219px" }}
       viewBox="0 0 204 219"
-      fill="none"
+      width={{ base: "80px", lg: "204px" }}
+      xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_d_245_3865)">
         <rect
-          width="144"
+          fill="#EFA73F"
           height="148"
           transform="translate(121.252) rotate(55.0113)"
-          fill="#EFA73F"
+          width="144"
         />
         <g filter="url(#filter1_d_245_3865)">
           <path
@@ -39,20 +40,20 @@ const HeroSmileIcon: NextPage = () => {
       </g>
       <defs>
         <filter
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="218.84"
           id="filter0_d_245_3865"
+          width="203.824"
           x="0"
           y="0"
-          width="203.824"
-          height="218.84"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
+            result="hardAlpha"
             type="matrix"
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
           />
           <feOffset dy="16" />
           <feComposite in2="hardAlpha" operator="out" />
@@ -61,32 +62,32 @@ const HeroSmileIcon: NextPage = () => {
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
           />
           <feBlend
-            mode="normal"
             in2="BackgroundImageFix"
+            mode="normal"
             result="effect1_dropShadow_245_3865"
           />
           <feBlend
-            mode="normal"
             in="SourceGraphic"
             in2="effect1_dropShadow_245_3865"
+            mode="normal"
             result="shape"
           />
         </filter>
         <filter
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="107.522"
           id="filter1_d_245_3865"
+          width="114.91"
           x="38.5801"
           y="49.1289"
-          width="114.91"
-          height="107.522"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
+            result="hardAlpha"
             type="matrix"
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
           />
           <feOffset dy="8.81549" />
           <feComposite in2="hardAlpha" operator="out" />
@@ -95,14 +96,14 @@ const HeroSmileIcon: NextPage = () => {
             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
           />
           <feBlend
-            mode="normal"
             in2="BackgroundImageFix"
+            mode="normal"
             result="effect1_dropShadow_245_3865"
           />
           <feBlend
-            mode="normal"
             in="SourceGraphic"
             in2="effect1_dropShadow_245_3865"
+            mode="normal"
             result="shape"
           />
         </filter>

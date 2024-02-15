@@ -5,7 +5,7 @@ const Button = {
     textAlign: "center",
     fontSize: "24px",
   },
-  // Two sizes: sm and md
+  // sizes
   sizes: {
     xs: {
       padding: "4px 8px",
@@ -20,7 +20,7 @@ const Button = {
       fontSize: "24px",
     },
   },
-  // Two variants: outline and solid
+  // variants
   variants: {
     primary: {
       borderRadius: "92px",
