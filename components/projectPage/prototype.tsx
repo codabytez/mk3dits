@@ -7,7 +7,13 @@ import prototypeFace from "@/public/assets/projectSmileFace.svg";
 
 const Prototype: NextPage = () => {
   return (
-    <VStack maxW={"1090px"} w={"full"} alignItems={"flex-start"} spacing={10}>
+    <VStack
+      maxW={"1090px"}
+      w={"full"}
+      alignItems={"flex-start"}
+      spacing={10}
+      pb={"150px"}
+    >
       <Heading
         as={"h4"}
         color={"#030303"}
