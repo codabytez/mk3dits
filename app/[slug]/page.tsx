@@ -1,8 +1,13 @@
 import React from "react";
 import { NextPage } from "next";
+import Project from "@/components/projectPage/project";
 
-const ProjectPage: NextPage = () => {
-  return <div>Project Page</div>;
-};
+interface ProjectPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const ProjectPage: NextPage<ProjectPageProps> = () => <Project />;
 
 export default ProjectPage;

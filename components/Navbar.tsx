@@ -66,7 +66,7 @@ const Navbar: NextPage = () => {
           <HStack
             bg={"white"}
             flexBasis={{ sm: "345px" }}
-            p={"24.5px"}
+            p={{ base: "24.5px", lg: 0 }}
             position={"relative"}
             zIndex={1}
           >
@@ -116,6 +116,7 @@ const Navbar: NextPage = () => {
                 textDecoration: "none",
               }}
               alignItems={"center"}
+              justifyContent={"center"}
               as={Link}
               border={{ base: "5px solid black", lg: 0 }}
               borderBottom={0}
@@ -125,7 +126,7 @@ const Navbar: NextPage = () => {
               fontSize={{ base: 24, sm: 56, lg: 24 }}
               fontWeight={"medium"}
               href={"/"}
-              p={{ base: 0, md: 7 }}
+              p={{ base: 0, md: 3 }}
               position={"relative"}
               role={"group"}
               textAlign={"center"}
@@ -158,7 +159,7 @@ const Navbar: NextPage = () => {
               fontWeight={"medium"}
               href={"#about"}
               justifyContent={"center"}
-              p={{ base: 0, md: 7 }}
+              p={{ base: 0, md: 3 }}
               position={"relative"}
               role={"group"}
               textAlign={"center"}
@@ -190,7 +191,7 @@ const Navbar: NextPage = () => {
               fontWeight={"medium"}
               href={"#projects"}
               justifyContent={"center"}
-              p={{ base: 0, md: 7 }}
+              p={{ base: 0, md: 3 }}
               position={"relative"}
               role={"group"}
               textAlign={"center"}
@@ -221,7 +222,7 @@ const Navbar: NextPage = () => {
               fontWeight={"medium"}
               href={"#contact"}
               justifyContent={"center"}
-              p={{ base: 0, md: 7 }}
+              p={{ base: 0, md: 3 }}
               position={"relative"}
               role={"group"}
               textAlign={"center"}

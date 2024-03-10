@@ -12,7 +12,7 @@ const Footer: NextPage = () => {
       borderTop={"6px solid #000"}
       h={{ lg: "100px" }}
       mt={{ base: "100px", lg: "190px" }}
-      py={{ base: 10, xl: "85px" }}
+      py={10}
       w={"full"}
     >
       <Stack
@@ -41,18 +41,7 @@ const Footer: NextPage = () => {
             fontWeight={"bold"}
             href={"/"}
           >
-            MK
-          </ChakraLink>
-          . baked by{" "}
-          <ChakraLink
-            _hover={{
-              color: "orange.200",
-            }}
-            as={Link}
-            fontWeight={"bold"}
-            href={"https://codabytez.vercel.app/"}
-          >
-            bytez
+            MK.
           </ChakraLink>
         </Text>
 

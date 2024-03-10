@@ -74,6 +74,33 @@ const Projects: NextPage = () => {
                 fill="#FFDC58"
               />
             </ChakraSvg>
+
+            <ChakraSvg
+              position={"absolute"}
+              zIndex={-1}
+              bottom={{ base: 0, md: 0 }}
+              right={{ base: "15px", md: "35px" }}
+              animate={{
+                y: [0, 10, 0],
+              }}
+              //   @ts-ignore
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              xmlns="http://www.w3.org/2000/svg"
+              width={{ base: "16px", md: "53px" }}
+              height={{ base: "17px", md: "34px" }}
+              viewBox="0 0 53 34"
+              fill="none"
+            >
+              <path
+                d="M0.207091 0.77008L22.5613 33.6703L52.0872 12.5804L25.5142 6.67534L0.207091 0.77008Z"
+                fill="black"
+                fillOpacity="0.25"
+              />
+            </ChakraSvg>
           </Box>
         </HStack>
 

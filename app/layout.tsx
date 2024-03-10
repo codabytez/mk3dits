@@ -5,7 +5,7 @@ import { Providers } from "./providers";
 import type { Metadata } from "next";
 import { Space_Grotesk as spaceGroteskFont } from "next/font/google";
 import Footer from "@/components/Footer";
-import { Box } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 
 const spaceGrotesk = spaceGroteskFont({
   subsets: ["latin"],
@@ -33,9 +33,13 @@ export default function RootLayout({
         scrollBehavior={"smooth"}
       >
         <Providers>
-          <Navbar />
-          <Box as={"main"}>{children}</Box>
-          <Footer />
+          <VStack justifyContent={"space-between"} minH={"100vh"}>
+            <VStack>
+              <Navbar />
+              <Box as={"main"}>{children}</Box>
+            </VStack>
+            <Footer />
+          </VStack>
         </Providers>
       </Box>
     </html>

@@ -25,11 +25,14 @@ const HeroPage: NextPage = () => {
       <HeroImg />
 
       <Box
-        bottom={{ base: "-150px", md: "-100px", xl: "-130px" }}
+        bottom={{ base: "-100px", md: "-100px", xl: "-100px" }}
         h={{ base: "122px", lg: "200px" }}
         position={"absolute"}
-        right={{ base: "30%", md: "-15%", xl: 0 }}
+        right={{ base: "30%", md: "30%", xl: 0 }}
         w={{ base: "122px", lg: "200px" }}
+        bg={"#EFA73F"}
+        borderRadius={"50%"}
+        zIndex={4}
       >
         <CurveText />
 
